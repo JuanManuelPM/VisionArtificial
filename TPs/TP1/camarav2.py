@@ -9,8 +9,12 @@ def update_brightness(value):
 
 
 def update_kernel_size(value):
-    global kernel_size
-    kernel_size = value
+    global kernel
+    kernel = value
+
+def update_gray_value(value):
+    global val
+    val = value
 
 cap = cv2.VideoCapture(0)  # 0 represents the default camera
 
@@ -20,9 +24,13 @@ cv.createTrackbar('Brightness', 'Camera', 0, 100, update_brightness)
 
 cv2.createTrackbar('Kernel Size', 'Camera', 1, 20, update_kernel_size)
 
+cv2.createTrackbar('Binary Threshold', 'Camera', 0, 255, update_gray_value)
+
 brightness = 0  # Initial brightness value
 
 kernel_size = 1  # Initial kernel size
+
+val = 1  # Initial binary-gray value
 
 while True:
     ret, frame = cap.read()  # Read a frame from the camera
