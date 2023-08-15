@@ -4,7 +4,6 @@ import cv2 as cv
 #generar la imagen normal
 image = cv.imread('../../static/images/circulo.jpg')
 gray = cv.cvtColor(image, cv.COLOR_BGRA2GRAY)
-kernel = cv2.getStructuringElement(cv.MORPH_ELLIPSE, )
 
 #cv.imshow('Circulo', gray)
 #cv.waitKey(0)
@@ -20,6 +19,3 @@ cv.namedWindow('BinaryInv')
 cv.createTrackbar('Trackbar', 'BinaryInv', 0, 255, binary_inv)
 binary_inv(0)
 cv.waitKey(0)
-
-#Para eliminar el ruido, debemos erosionar y dilatar las imágenes
-cv2.erode()
