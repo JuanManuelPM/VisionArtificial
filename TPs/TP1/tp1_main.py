@@ -44,8 +44,7 @@ def denoise(frame, method, radius):
     return closing
 
 
-cv.namedWindow("Operaciones Morfológicas")
-cv.createTrackbar('Trackbar', 'Operaciones Morfológicas', 0, 100, denoise)
+
 #cv.createTrackbar('Area contorno minima', 'Operaciones Morfológicas', 0, 100,  )
 
 
@@ -64,3 +63,7 @@ while cv.waitKey(1) != ord(' '):
     frame = cv.flip(frame, 1)
     # aca las mostramos en una ventana
     cv.imshow('frame', frame)
+
+    cv.namedWindow("Operaciones Morfológicas")
+    cv.createTrackbar('Trackbar', 'Operaciones Morfológicas', 0, 100, denoise(frame, cv.MORPH_ELLIPSE,1))
+    cv.waitKey()
