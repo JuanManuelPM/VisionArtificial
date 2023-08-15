@@ -52,7 +52,7 @@ while True:
 
     closing = cv.morphologyEx(denoise_frame, cv.MORPH_CLOSE, kernel)
 
-    adjusted_frame = cv2.add(frame, brightness)
+    adjusted_frame = cv2.add(frame, val)
 
     cv.imshow('Camera', adjusted_frame)
 
