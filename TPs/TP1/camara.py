@@ -5,27 +5,39 @@ import cv2 as cv
 def update_brightness(value):
     global brightness
     brightness = value
-def denoise(frame, method, radius):
-    kernel = cv.getStructuringElement(method, (radius, radius))
-    opening = cv.morphologyEx(frame, cv.MORPH_OPEN, kernel)
-    closing = cv.morphologyEx(opening, cv.MORPH_CLOSE, kernel)
-    return closing
 
-def getFrame():
-    return cap.read()
+def update_kernel_size(value):
+    global kernel_size
+    kernel_size = value
 
 cap = cv2.VideoCapture(0)  # 0 represents the default camera
 
 cv.namedWindow('Camera')
 
 cv.createTrackbar('Brightness', 'Camera', 0, 100, update_brightness)
-cv.createTrackbar('Brightness', 'Camera', 0, 100, denoise(getFrame(), cv.MORPH_ELLIPSE, 1))
 
+# Create a trackbar named 'Kernel Size' in the 'Camera' window
+cv2.createTrackbar('Kernel Size', 'Camera', 1, 20, update_kernel_size)
 
 brightness = 0  # Initial brightness value
 
 while True:
     ret, frame = cap.read()  # Read a frame from the camera
+
+    if not ret:
+        print("Error reading frame")
+        break
+
+    # Convert the frame to grayscale for denoising
+    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    # Create a kernel for morphological operation
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+
+    # Apply opening operation to denoise the image
+    denoised_frame = cv2.morphologyEx(gray_frame, cv2.MORPH_OPEN, kernel)
+
+    closing = cv.morphologyEx(denoised_frame, cv.MORPH_CLOSE, kernel)
 
     adjusted_frame = cv2.add(frame, brightness)
 
