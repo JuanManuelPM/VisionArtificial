@@ -1,10 +1,9 @@
-import cv2
 import cv2 as cv
 
 # generar la imagen normal
 image_circle = cv.imread('../../static/images/circulo.jpg')
-image_triangle = cv.imread('../../static/images/triangulo.jpg')
-image_square = cv.imread('../../static/images/cuadrado.jpg')
+image_triangle = cv.imread('../../static/images/triangulo.jpeg')
+image_square = cv.imread('../../static/images/cuadrado.jpeg')
 
 gray = cv.cvtColor(image_circle, cv.COLOR_BGR2GRAY)
 # Any sharp edges in images are smoothed while minimizing too much blurring.
@@ -46,8 +45,8 @@ def denoise(frame, method, radius):
 
 
 cv.namedWindow("Operaciones Morfológicas")
-cv.createTrackBar('Trackbar', 'Operaciones Morfológicas', 0, 20, denoise)
-cv.createTrackbar('Area contorno minima', 'Operaciones Morfológicas', 0, 100,  )
+cv.createTrackbar('Trackbar', 'Operaciones Morfológicas', 0, 100, denoise)
+#cv.createTrackbar('Area contorno minima', 'Operaciones Morfológicas', 0, 100,  )
 
 
 #CHAIN_APPROX_NONE registra un punto por pixel
@@ -64,11 +63,4 @@ while cv.waitKey(1) != ord(' '):
     # aca las espejamos para que se vean bien
     frame = cv.flip(frame, 1)
     # aca las mostramos en una ventana
-
-    def binary_inv(val):
-        gray = cv.cvtColor(frame, cv.COLOR_RGB2GRAY)
-        ret2, thresh2 = cv.threshold(gray, val, 255, cv.THRESH_BINARY_INV)
-        cv.imshow("BinaryInv", thresh2)
-
-    cv.imshow('img1', frame)
-
+    cv.imshow('frame', frame)
