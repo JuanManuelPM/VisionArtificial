@@ -9,7 +9,7 @@ kernel = cv2.getStructuringElement(cv.MORPH_ELLIPSE, )
 #cv.imshow('Circulo', gray)
 #cv.waitKey(0)
 
-#Agregar threshold
+#Agregar threshold.
 #threshold(imagen en escala de grises, valor de umbral, valor máximo que se le asigna a los pixeles que exceden el umbral, tipo de threshold)
 def binary_inv(val):
     gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
