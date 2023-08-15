@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c017c972-6546-4bad-a035-1800efa2041b" name="Changes" comment="borre boludeces">
-      <change afterPath="$PROJECT_DIR$/TPs/TP1/camara.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/TP1/tp1_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP1/tp1_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP1/ElimiarRuido.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP1/ElimiarRuido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP1/camara.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP1/camara.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2TycJ194FsP5432DzXfjnqcIc6t" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -112,9 +115,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="borre boludeces" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/visionArtificial$Deteccion.coverage" NAME="Deteccion Coverage Results" MODIFIED="1692121758156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$tp1_main.coverage" NAME="tp1_main Coverage Results" MODIFIED="1692122008586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camara.coverage" NAME="camara Coverage Results" MODIFIED="1692122577108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$camara.coverage" NAME="camara Coverage Results" MODIFIED="1692123595930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$testContours2.coverage" NAME="testContours2 Coverage Results" MODIFIED="1692121259096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$tp1_main.coverage" NAME="tp1_main Coverage Results" MODIFIED="1692121180201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$tp1_main.coverage" NAME="tp1_main Coverage Results" MODIFIED="1692121694440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$main.coverage" NAME="main Coverage Results" MODIFIED="1692110363238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/visionArtificial$Deteccion.coverage" NAME="Deteccion Coverage Results" MODIFIED="1692121758156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$testContours.coverage" NAME="testContours Coverage Results" MODIFIED="1692118279937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camara.coverage" NAME="camara Coverage Results" MODIFIED="1692122577108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1692111135202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
   </component>
 </project>

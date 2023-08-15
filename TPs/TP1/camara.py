@@ -2,13 +2,16 @@ import cv2
 
 import cv2 as cv
 
+
 def update_brightness(value):
     global brightness
     brightness = value
 
+
 def update_kernel_size(value):
     global kernel_size
     kernel_size = value
+
 
 cap = cv2.VideoCapture(0)  # 0 represents the default camera
 
@@ -35,9 +38,9 @@ while True:
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 
     # Apply opening operation to denoise the image
-    denoised_frame = cv2.morphologyEx(gray_frame, cv2.MORPH_OPEN, kernel)
+    denoise_frame = cv2.morphologyEx(gray_frame, cv2.MORPH_OPEN, kernel)
 
-    closing = cv.morphologyEx(denoised_frame, cv.MORPH_CLOSE, kernel)
+    closing = cv.morphologyEx(denoise_frame, cv.MORPH_CLOSE, kernel)
 
     adjusted_frame = cv2.add(frame, brightness)
 
@@ -49,8 +52,3 @@ while True:
 
 cap.release()
 cv.destroyAllWindows()
-
-
-
-
-
