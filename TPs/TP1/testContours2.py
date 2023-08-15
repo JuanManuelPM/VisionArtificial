@@ -1,8 +1,8 @@
 import cv2 as cv
 
 image_circle = cv.imread('../../static/images/circulo.jpg')
-image_triangle = cv.imread('../../static/images/triangulo.jpg')
-image_square = cv.imread('../../static/images/cuadrado.jpg')
+image_triangle = cv.imread('../../static/images/triangulo.jpeg')
+image_square = cv.imread('../../static/images/cuadrado.jpeg')
 
 gray = cv.cvtColor(image_circle, cv.COLOR_BGR2GRAY)
 # Any sharp edges in images are smoothed while minimizing too much blurring.
