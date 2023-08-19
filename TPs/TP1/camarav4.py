@@ -4,7 +4,7 @@ import numpy as np
 
 # Callback function for the kernel size trackbar
 def update_kernel_size(value):
-    if(value == 0):
+    if value == 0:
         value = 1
     global kernel_size
     kernel_size = value
@@ -59,13 +59,21 @@ while True:
     # Convert the binary frame to a 3-channel (color) image
     colored_binary_frame = cv2.cvtColor(binary_frame, cv2.COLOR_GRAY2BGR)
 
-    # Find and draw contours if contour_detection is enabled
+    # Find and filter contours if contour_detection is enabled
     if contour_detection == 1:
         contours, _ = cv2.findContours(binary_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        cv2.drawContours(frame, contours, -1, (0, 255, 0), 2)
 
-    # Combine the original, denoised, binary thresholded, and contour frames horizontally
-    combined_frame = np.hstack((frame, denoised_frame, colored_binary_frame))
+        # Filter out contours with areas within a certain range (e.g., circles)
+        min_contour_area = 100  # Adjust this threshold as needed
+        max_contour_area = 5000  # Adjust this threshold as needed
+
+        for contour in contours:
+            contour_area = cv2.contourArea(contour)
+            if min_contour_area < contour_area < max_contour_area:
+                cv2.drawContours(colored_binary_frame, [contour], -1, (0, 255, 0), 2)
+
+    # Combine the denoised and binary thresholded frames horizontally
+    combined_frame = np.hstack((denoised_frame, colored_binary_frame))
 
     # Display the combined frame
     cv2.imshow('Camera', combined_frame)
