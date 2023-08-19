@@ -46,8 +46,8 @@ while True:
     # Apply binary thresholding to the denoised frame
     _, binary_frame = cv2.threshold(denoised_frame, threshold_value, 255, cv2.THRESH_BINARY)
 
-    # Combine the denoised and binary thresholded frames side by side
-    combined_frame = np.hstack((denoised_frame, binary_frame))
+    # Combine the original, denoised, and binary thresholded frames horizontally
+    combined_frame = np.hstack((frame, denoised_frame, binary_frame))
 
     # Display the combined frame
     cv2.imshow('Camera', combined_frame)
