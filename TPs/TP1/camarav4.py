@@ -4,6 +4,8 @@ import numpy as np
 
 # Callback function for the kernel size trackbar
 def update_kernel_size(value):
+    if(value == 0):
+        value = 1
     global kernel_size
     kernel_size = value
 
