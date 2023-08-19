@@ -46,6 +46,9 @@ while True:
     # Apply binary thresholding to the denoised frame
     _, binary_frame = cv2.threshold(denoised_frame, threshold_value, 255, cv2.THRESH_BINARY)
 
+    # Resize the binary frame to match the dimensions of the color frames
+    resized_binary_frame = cv2.resize(binary_frame, (frame.shape[1], frame.shape[0]))
+
     # Combine the original, denoised, and binary thresholded frames horizontally
     combined_frame = np.hstack((frame, denoised_frame, binary_frame))
 
