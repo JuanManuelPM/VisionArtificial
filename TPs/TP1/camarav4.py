@@ -63,18 +63,22 @@ while True:
     if contour_detection == 1:
         contours, _ = cv2.findContours(binary_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-        # Filter out contours with areas within a certain range (e.g., circles)
-        min_contour_area = 100  # Adjust this threshold as needed
-        max_contour_area = 5000  # Adjust this threshold as needed
-
         for contour in contours:
-            contour_area = cv2.contourArea(contour)
-            if min_contour_area < contour_area < max_contour_area:
-                cv2.drawContours(colored_binary_frame, [contour], -1, (0, 255, 0), 2)
+            epsilon = 0.04 * cv2.arcLength(contour, True)
+            approx = cv2.approxPolyDP(contour, epsilon, True)
 
-    # Combine the denoised and binary thresholded frames horizontally
+            # Detect and draw triangles
+            if len(approx) == 3:
+                cv2.drawContours(colored_binary_frame, [approx], 0, (0, 255, 0), 2)
+
+            # Detect and draw rectangles (or squares)
+            elif len(approx) == 4:
+                x, y, w, h = cv2.boundingRect(approx)
+                aspect_ratio = float(w) / h
+                if 0.9 <= aspect_ratio <= 1.1:
+                    cv2.drawContours(colored_binary_frame, [approx], 0, (0, 0, 255), 2)
+
     combined_frame = np.hstack((denoised_frame, colored_binary_frame))
-
     # Display the combined frame
     cv2.imshow('Camera', combined_frame)
 
