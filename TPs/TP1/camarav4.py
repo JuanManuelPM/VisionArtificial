@@ -34,20 +34,17 @@ while True:
         print("Error reading frame")
         break
 
-    # Convert the frame to grayscale for denoising
-    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
     # Create a kernel for morphological operation
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kernel_size, kernel_size))
 
     # Apply opening operation to denoise the image
-    denoised_frame = cv2.morphologyEx(gray_frame, cv2.MORPH_OPEN, kernel)
+    denoised_frame = cv2.morphologyEx(frame, cv2.MORPH_OPEN, kernel)
 
-    # Apply binary thresholding to the denoised frame
-    _, binary_frame = cv2.threshold(denoised_frame, threshold_value, 255, cv2.THRESH_BINARY)
+    # Convert the denoised frame to grayscale for binary thresholding
+    gray_denoised_frame = cv2.cvtColor(denoised_frame, cv2.COLOR_BGR2GRAY)
 
-    # Resize the binary frame to match the dimensions of the color frames
-    resized_binary_frame = cv2.resize(binary_frame, (frame.shape[1], frame.shape[0]))
+    # Apply binary thresholding to the grayscale denoised frame
+    _, binary_frame = cv2.threshold(gray_denoised_frame, threshold_value, 255, cv2.THRESH_BINARY)
 
     # Combine the original, denoised, and binary thresholded frames horizontally
     combined_frame = np.hstack((frame, denoised_frame, binary_frame))
