@@ -3,8 +3,8 @@ import numpy as np
 
 
 def update_contour(value):
-    global contour_mode
-    contour_mode = value
+    global contour_threshold
+    contour_threshold = value
 
 
 # Callback function for the kernel size trackbar
@@ -32,7 +32,7 @@ cv2.createTrackbar('Contour', 'Camera', 100, 500, update_contour)
 
 kernel_size = 1  # Initial kernel size
 threshold_value = 128  # Initial threshold value
-contour_mode = 0  # Initial contour detection mode (off)
+contour_threshold = 100  # Initial contour detection mode (off)
 
 while True:
     ret, frame = cap.read()  # Read a frame from the camera
