@@ -40,18 +40,15 @@ while True:
     # Apply opening operation to denoise the image
     denoised_frame = cv2.morphologyEx(frame, cv2.MORPH_OPEN, kernel)
 
-    # Convert the denoised frame to grayscale for binary thresholding
-    gray_denoised_frame = cv2.cvtColor(denoised_frame, cv2.COLOR_BGR2GRAY)
-
     # Apply binary thresholding to the grayscale denoised frame
+    gray_denoised_frame = cv2.cvtColor(denoised_frame, cv2.COLOR_BGR2GRAY)
     _, binary_frame = cv2.threshold(gray_denoised_frame, threshold_value, 255, cv2.THRESH_BINARY)
 
-    # Resize denoised and binary frames to match the dimensions of the original frame
-    resized_denoised_frame = cv2.resize(denoised_frame, (frame.shape[1], frame.shape[0]))
-    resized_binary_frame = cv2.resize(binary_frame, (frame.shape[1], frame.shape[0]))
+    # Convert the binary frame to a 3-channel (color) image
+    colored_binary_frame = cv2.cvtColor(binary_frame, cv2.COLOR_GRAY2BGR)
 
-    # Combine the original, resized denoised, and resized binary thresholded frames horizontally
-    combined_frame = np.hstack((frame, resized_denoised_frame, resized_binary_frame))
+    # Combine the original, denoised, and binary thresholded frames horizontally
+    combined_frame = np.hstack((frame, denoised_frame, colored_binary_frame))
 
     # Display the combined frame
     cv2.imshow('Camera', combined_frame)
