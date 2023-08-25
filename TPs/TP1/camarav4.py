@@ -68,7 +68,6 @@ while True:
     # Find and filter contours if contour_detection is enabled
     contours, hierarchy = cv2.findContours(denoised_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
-
     valid_contours = []
     for contour in contours:
         area = cv2.contourArea(contour)
@@ -80,8 +79,10 @@ while True:
     # Draw contours in denoised frame
     cv2.drawContours(frame, valid_contours, -1, (0, 0, 255), 2)
 
+    # Convert binary to 3-frame channel to show
     binary_frame_3channel = cv2.cvtColor(denoised_frame, cv2.COLOR_GRAY2BGR)
 
+    # Combine both binary and original frame to show
     combined_frame = np.hstack((binary_frame_3channel, frame))
 
     # Display the combined frame
