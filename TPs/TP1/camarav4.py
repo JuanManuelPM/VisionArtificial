@@ -9,8 +9,8 @@ gray = cv2.cvtColor(image_circle, cv2.COLOR_BGR2GRAY)
 # Any sharp edges in images are smoothed while minimizing too much blurring.
 blurred_gray = cv2.GaussianBlur(gray, (5, 5), 0)
 # We also used THRESH_OTSU to analyze the image and determine the threshold.
-ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-contour_circle, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+contour_circle, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 cv2.drawContours(image_circle, contour_circle, -1, (0, 0, 255), 2)
 cv2.imwrite('image_circle.jpg', image_circle)
 
@@ -68,11 +68,14 @@ while True:
     # Find and filter contours if contour_detection is enabled
     contours, hierarchy = cv2.findContours(denoised_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
+
     valid_contours = []
     for contour in contours:
         area = cv2.contourArea(contour)
-        if 500 < area < 5000:
-            valid_contours.append(contour)
+        if 100 < area:
+            print(cv2.matchShapes(contour_circle[0], contour, cv2.CONTOURS_MATCH_I2, 0))
+            if cv2.matchShapes(contour_circle[0], contour, cv2.CONTOURS_MATCH_I2, 0) > 0.5:
+                valid_contours.append(contour)
 
     # Draw contours in denoised frame
     cv2.drawContours(frame, valid_contours, -1, (0, 0, 255), 2)
