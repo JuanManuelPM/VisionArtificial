@@ -73,8 +73,8 @@ while True:
     for contour in contours:
         area = cv2.contourArea(contour)
         if 100 < area:
-            print(cv2.matchShapes(contour_circle[0], contour, cv2.CONTOURS_MATCH_I2, 0))
-            if cv2.matchShapes(contour_circle[0], contour, cv2.CONTOURS_MATCH_I2, 0) > 0.5:
+            print(cv2.matchShapes(contour, contour_circle[0], cv2.CONTOURS_MATCH_I2, 0))
+            if cv2.matchShapes(contour, contour_circle[0], cv2.CONTOURS_MATCH_I2, 0) < 0.01:
                 valid_contours.append(contour)
 
     # Draw contours in denoised frame
@@ -86,9 +86,6 @@ while True:
 
     # Display the combined frame
     cv2.imshow('Camera', combined_frame)
-
-
-
 
     key = cv2.waitKey(1) & 0xFF
     if key == ord('q'):  # Press 'q' to exit
