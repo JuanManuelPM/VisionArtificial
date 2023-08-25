@@ -1,11 +1,21 @@
 import cv2
 import numpy as np
 
+image_circle = cv2.imread('../../static/images/circulo.jpg')
+image_triangle = cv2.imread('../../static/images/triangulo.jpeg')
+image_square = cv2.imread('../../static/images/cuadrado.jpeg')
+
+gray = cv2.cvtColor(image_circle, cv2.COLOR_BGR2GRAY)
+# Any sharp edges in images are smoothed while minimizing too much blurring.
+blurred_gray = cv2.GaussianBlur(gray, (5, 5), 0)
+# We also used THRESH_OTSU to analyze the image and determine the threshold.
+ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+contour_circle, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+cv2.drawContours(image_circle, contour_circle, -1, (0, 0, 255), 2)
+cv2.imwrite('image_circle.jpg', image_circle)
 
 # Callback function for the kernel size trackbar
 def update_kernel_size(value):
-    if value == 0:
-        value = 1
     global kernel_size
     kernel_size = value
 
@@ -35,7 +45,6 @@ cv2.createTrackbar('Contour Detection', 'Camera', 0, 1, update_contour_detection
 
 kernel_size = 1  # Initial kernel size
 threshold_value = 128  # Initial threshold value
-contour_detection = 0  # Initial contour detection value
 
 while True:
     ret, frame = cap.read()  # Read a frame from the camera
@@ -44,43 +53,39 @@ while True:
         print("Error reading frame")
         break
 
+    # Convert to binary frame
+    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
     # Create a kernel for morphological operation
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kernel_size, kernel_size))
 
+    # Apply binary thresholding to the grayscale frame
+    _, binary_frame = cv2.threshold(gray_frame, threshold_value, 255, cv2.THRESH_BINARY)
+
     # Apply opening operation to denoise the image
-    denoised_frame = cv2.morphologyEx(frame, cv2.MORPH_OPEN, kernel)
-
-    # Convert the denoised frame to grayscale for binary thresholding
-    gray_denoised_frame = cv2.cvtColor(denoised_frame, cv2.COLOR_BGR2GRAY)
-
-    # Apply binary thresholding to the grayscale denoised frame
-    _, binary_frame = cv2.threshold(gray_denoised_frame, threshold_value, 255, cv2.THRESH_BINARY)
-
-    # Convert the binary frame to a 3-channel (color) image
-    colored_binary_frame = cv2.cvtColor(binary_frame, cv2.COLOR_GRAY2BGR)
+    denoised_frame = cv2.morphologyEx(binary_frame, cv2.MORPH_OPEN, kernel)
 
     # Find and filter contours if contour_detection is enabled
-    if contour_detection == 1:
-        contours, _ = cv2.findContours(binary_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(denoised_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
-        for contour in contours:
-            epsilon = 0.04 * cv2.arcLength(contour, True)
-            approx = cv2.approxPolyDP(contour, epsilon, True)
+    valid_contours = []
+    for contour in contours:
+        area = cv2.contourArea(contour)
+        if 500 < area < 5000:
+            valid_contours.append(contour)
 
-            # Detect and draw triangles
-            if len(approx) == 3:
-                cv2.drawContours(colored_binary_frame, [approx], 0, (0, 255, 0), 2)
+    # Draw contours in denoised frame
+    cv2.drawContours(frame, valid_contours, -1, (0, 0, 255), 2)
 
-            # Detect and draw rectangles (or squares)
-            elif len(approx) == 4:
-                x, y, w, h = cv2.boundingRect(approx)
-                aspect_ratio = float(w) / h
-                if 0.9 <= aspect_ratio <= 1.1:
-                    cv2.drawContours(colored_binary_frame, [approx], 0, (0, 0, 255), 2)
+    binary_frame_3channel = cv2.cvtColor(denoised_frame, cv2.COLOR_GRAY2BGR)
 
-    combined_frame = np.hstack((denoised_frame, colored_binary_frame))
+    combined_frame = np.hstack((binary_frame_3channel, frame))
+
     # Display the combined frame
     cv2.imshow('Camera', combined_frame)
+
+
+
 
     key = cv2.waitKey(1) & 0xFF
     if key == ord('q'):  # Press 'q' to exit
