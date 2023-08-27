@@ -1,20 +1,16 @@
 import cv2
 import numpy as np
 
-image_circle = cv2.imread('../../static/images/circulo.jpg')
-image_triangle = cv2.imread('../../static/images/triangulo.jpeg')
-image_square = cv2.imread('../../static/images/cuadrado.jpeg')
-
-
-
-gray = cv2.cvtColor(image_circle, cv2.COLOR_BGR2GRAY)
-# Any sharp edges in images are smoothed while minimizing too much blurring.
-blurred_gray = cv2.GaussianBlur(gray, (5, 5), 0)
-# We also used THRESH_OTSU to analyze the image and determine the threshold.
-ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-contour_circle, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-cv2.drawContours(image_circle, contour_circle, -1, (0, 255, 0), 2)
-cv2.imwrite('image_circle.jpg', image_circle)
+def get_contour(image, name):
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # Any sharp edges in images are smoothed while minimizing too much blurring.
+    blurred_gray = cv2.GaussianBlur(gray, (5, 5), 0)
+    # We also used THRESH_OTSU to analyze the image and determine the threshold.
+    ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    contour, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    cv2.drawContours(image, contour, -1, (0, 255, 0), 2)
+    cv2.imshow("image" + name, image)
+    return contour
 
 # Callback function for the kernel size trackbar
 def update_kernel_size(value):
@@ -48,6 +44,12 @@ cv2.createTrackbar('Contour Detection', 'Camera', 0, 1, update_contour_detection
 kernel_size = 1  # Initial kernel size
 threshold_value = 128  # Initial threshold value
 
+contour_circle = get_contour(cv2.imread('../../static/images/circulo.jpg'), "circle")
+contour_triangle = get_contour(cv2.imread('../../static/images/triangulo.jpg'), "triangle")
+contour_rectangle = get_contour(cv2.imread('../../static/images/cuadrado.jpg'), "rectangle")
+contour_star = get_contour(cv2.imread('../../static/images/star.jpg'), "star")
+
+
 while True:
     ret, frame = cap.read()  # Read a frame from the camera
 
@@ -62,7 +64,7 @@ while True:
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kernel_size, kernel_size))
 
     # Apply binary thresholding to the grayscale frame
-    _, binary_frame = cv2.threshold(gray_frame, threshold_value, 255, cv2.THRESH_BINARY)
+    _, binary_frame = cv2.threshold(gray_frame, threshold_value, 255, cv2.THRESH_BINARY_INV)
 
     # Apply opening operation to denoise the image
     denoised_frame = cv2.morphologyEx(binary_frame, cv2.MORPH_OPEN, kernel)
@@ -70,16 +72,58 @@ while True:
     # Find and filter contours if contour_detection is enabled
     contours, hierarchy = cv2.findContours(denoised_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
-    valid_contours = []
+    valid_contours_circles = []
+    valid_contours_triangles = []
+    valid_contours_rectangles = []
+    valid_contours_stars = []
+    invalid_contours = []
+
     for contour in contours:
         area = cv2.contourArea(contour)
-        if 100 < area:
-            print(cv2.matchShapes(contour, contour_circle[0], cv2.CONTOURS_MATCH_I2, 0))
-            if cv2.matchShapes(contour, contour_circle[0], cv2.CONTOURS_MATCH_I2, 0) < 0.01:
-                valid_contours.append(contour)
+        if 100 < area < 5000:
+            #print(cv2.matchShapes(contour, contour_triangle[0], cv2.CONTOURS_MATCH_I2, 0))
+
+            error_circle = cv2.matchShapes(contour, contour_circle[0], cv2.CONTOURS_MATCH_I2, 0)
+            error_rectangle = cv2.matchShapes(contour, contour_rectangle[0], cv2.CONTOURS_MATCH_I2, 0)
+            error_star = cv2.matchShapes(contour, contour_star[0], cv2.CONTOURS_MATCH_I2, 0)
+
+            if error_circle < 0.03 and error_circle < error_star and error_circle < error_rectangle:
+                valid_contours_circles.append(contour)
+
+            elif error_star < 0.03 and error_star < error_circle and error_star < error_rectangle:
+                valid_contours_stars.append(contour)
+
+            elif error_rectangle < 0.03 and error_rectangle < error_circle and error_rectangle < error_star:
+                valid_contours_rectangles.append(contour)
+
+            else:
+             invalid_contours.append(contour)
+
+    # Add labels to the detected shapes
+    for contour in valid_contours_circles:
+        x, y = contour[0][0]
+        cv2.putText(frame, "Circle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+    for contour in valid_contours_stars:
+        x, y = contour[0][0]
+        cv2.putText(frame, "Star", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+
+    for contour in valid_contours_rectangles:
+        x, y, _, _ = cv2.boundingRect(contour)
+        cv2.putText(frame, "Square", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+
+    for contour in invalid_contours:
+        x, y = contour[0][0]
+        cv2.putText(frame, "?", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
 
     # Draw contours in denoised frame
-    cv2.drawContours(frame, valid_contours, -1, (0, 0, 255), 2)
+    cv2.drawContours(frame, valid_contours_circles, -1, (0, 255, 0), 2)
+
+    cv2.drawContours(frame, valid_contours_stars, -1, (255, 0, 0), 2)
+
+    cv2.drawContours(frame, valid_contours_rectangles, -1, (0, 255, 255), 2)
+
+    cv2.drawContours(frame, invalid_contours, -1, (0, 0, 255), 2)
 
     # Convert binary to 3-frame channel to show
     binary_frame_3channel = cv2.cvtColor(denoised_frame, cv2.COLOR_GRAY2BGR)
