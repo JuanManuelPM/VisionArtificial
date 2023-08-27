@@ -5,13 +5,15 @@ image_circle = cv2.imread('../../static/images/circulo.jpg')
 image_triangle = cv2.imread('../../static/images/triangulo.jpeg')
 image_square = cv2.imread('../../static/images/cuadrado.jpeg')
 
+
+
 gray = cv2.cvtColor(image_circle, cv2.COLOR_BGR2GRAY)
 # Any sharp edges in images are smoothed while minimizing too much blurring.
 blurred_gray = cv2.GaussianBlur(gray, (5, 5), 0)
 # We also used THRESH_OTSU to analyze the image and determine the threshold.
 ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 contour_circle, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-cv2.drawContours(image_circle, contour_circle, -1, (0, 0, 255), 2)
+cv2.drawContours(image_circle, contour_circle, -1, (0, 255, 0), 2)
 cv2.imwrite('image_circle.jpg', image_circle)
 
 # Callback function for the kernel size trackbar
