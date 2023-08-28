@@ -4,12 +4,13 @@ import cv2
 # print(cv2.__version__)
 
 # # load the input image and show its dimensions, keeping in mind that
-# # images are represented as a multi-dimensional NumPy array with
+# # images are represented as a multidimensional NumPy array with
 # # shape no. rows (height) x no. columns (width) x no. channels (depth)
 image = cv2.imread("../static/images/boca2000.jpg")
 (h, w, d) = image.shape
 
-# # Depth is the number of channels — in our case this is three since we’re working with 3 color channels: Blue, Green, and Red.
+# Depth is the number of channels — in our case this is three since we’re working with 3 color channels: Blue, Green
+# and Red.
 
 print("width={}, height={}, depth={}".format(w, h, d))
 # # display the image to our screen -- we will need to click the window

@@ -1,5 +1,3 @@
-import cv2 as cv
-
 #Para eliminar el ruido de la imagen, es necesario erosionar y dilatar la imagen.
 #La dilatación nos va a permitir distinguir el fondo, mientras que la erosión nos permite separar objetos y eliminar detalles finos pequeños
 #Se trabaja con imagenes binarias
@@ -15,5 +13,9 @@ def denoise(frame, method, radius):
     closing = cv.morphologyEx(opening, cv.MORPH_CLOSE, kernel)
     return closing
 
-cv.namedWindow("Operaciones Morfológicas")
-cv.createTrackBar('Trackbar', 'Operaciones Morfológicas', 0, 150, denoise)
+
+
+
+
+#CHAIN_APPROX_NONE registra un punto por pixel
+#RETR_TREE genera una jerarquia de arbol, con contornos dentro de contornos
