@@ -1,51 +1,120 @@
-import cv2 as cv
+import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 
-# Cargar la imagen de células
-img = cv.imread('../../static/images/celulas.png')
+# Carga de la imagen de células
+image = cv2.imread('../../static/images/celulas.png')
 
-# Convertir la imagen a escala de grises
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+# Convierte la imagen a escala de grises
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# Aplicar umbral para separar el primer plano (núcleos) del fondo
-_, binary_img = cv.threshold(gray, 100, 255, cv.THRESH_BINARY)
 
-# Realizar dilatación y erosión para mejorar la segmentación
-kernel_dilate = np.ones((33, 33), np.uint8)
-kernel_erode = np.ones((3, 3), np.uint8)
+# Define la función de umbralización
+def update_threshold(threshold_value):
+    _, thresholded = cv2.threshold(gray, threshold_value, 255, cv2.THRESH_BINARY)
 
-# Dilatación del fondo
-sure_bg = cv.dilate(binary_img, kernel_dilate, iterations=3)
+    # Encuentra y cuenta las células segmentadas
+    contours, _ = cv2.findContours(thresholded, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    cell_count = len(contours)
 
-# Erosión del primer plano
-fg_eroded = cv.erode(binary_img, kernel_erode, iterations=1)
+    # Dibuja los contornos de las células en la imagen original
+    result_image = image.copy()
+    cv2.drawContours(result_image, contours, -1, (0, 255, 0), 2)
 
-# Dilatación adicional del primer plano
-kernel_fg_dilate = np.ones((20, 20), np.uint8)
-fg_dilated = cv.dilate(fg_eroded, kernel_fg_dilate, iterations=1)
+    # Muestra la cantidad de células encontradas en la imagen
+    cv2.putText(result_image, f'Cells: {cell_count}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
-# Encontrar la región desconocida
-unknown = cv.subtract(sure_bg, fg_dilated)
+    # Muestra la imagen resultante
+    cv2.imshow('Segmented Cells', result_image)
 
-# Etiquetar componentes conectados en el primer plano
-_, markers = cv.connectedComponents(fg_dilated)
+    return thresholded
+
+
+# Crea una ventana con trackbar para ajustar el umbral
+cv2.namedWindow('Segmented Cells')
+cv2.createTrackbar('Threshold', 'Segmented Cells', 0, 255, update_threshold)
+
+# Inicializa la ventana con un valor de umbral por defecto
+initial_threshold = 128
+cv2.setTrackbarPos('Threshold', 'Segmented Cells', initial_threshold)
+
+# Llama a la función de umbralización inicial y obtiene la imagen binarizada
+thresholded_image = update_threshold(initial_threshold)
+
+# Espera hasta que se presione la tecla 'Esc' para continuar
+while True:
+    key = cv2.waitKey(10)
+    if key == 27:  # 27 es el código ASCII para la tecla 'Esc'
+        break
+
+# Cierra la ventana actual
+cv2.destroyWindow('Segmented Cells')
+
+# Paso 2: Individualizar con componentes conectados
+# a) Produce un mapa de semillas
+distance_transform = cv2.distanceTransform(thresholded_image, cv2.DIST_L2, maskSize=5)
+_, foreground = cv2.threshold(distance_transform, 0.7 * distance_transform.max(), 255, 0)
+foreground = np.uint8(foreground)
+
+# b) Visualiza el mapa de semillas con colormap
+cv2.imshow('Seeds Map', cv2.applyColorMap(foreground, cv2.COLORMAP_JET))
+
+# Espera hasta que se presione la tecla 'Esc' para continuar
+while True:
+    key = cv2.waitKey(10)
+    if key == 27:
+        break
+
+# Cierra la ventana actual
+cv2.destroyWindow('Seeds Map')
+
+
+# Paso 3: Agregar al menos una semilla para el fondo
+# a) Genera un mapa de semilla de fondo con otro threshold
+def update_background_threshold(background_threshold_value):
+    _, background_seeds = cv2.threshold(gray, background_threshold_value, 255, cv2.THRESH_BINARY_INV)
+    cv2.imshow('Background Seeds', background_seeds)
+
+
+# Crea una ventana con trackbar para ajustar el umbral del fondo
+cv2.namedWindow('Background Seeds')
+cv2.createTrackbar('Background Threshold', 'Background Seeds', 0, 255, update_background_threshold)
+
+# Inicializa la ventana con un valor de umbral por defecto
+initial_background_threshold = 100
+cv2.setTrackbarPos('Background Threshold', 'Background Seeds', initial_background_threshold)
+
+# Llama a la función de umbralización de fondo inicial
+update_background_threshold(initial_background_threshold)
+
+# Espera hasta que se presione la tecla 'Esc' para continuar
+while True:
+    key = cv2.waitKey(10)
+    if key == 27:
+        break
+
+# Cierra la ventana actual
+cv2.destroyWindow('Background Seeds')
+
+# Paso 4: Ejecutar watershed para producir la segmentación
+_, markers = cv2.connectedComponents(foreground)
 markers = markers + 1
-markers[unknown == 255] = 0
 
-# Aplicar Watershed para segmentación
-cv.watershed(img, markers)
-for i in np.unique(markers):
-    if i % 3 == 0:
-        img[markers == i] = [255, 0, 0]
-    elif i % 3 == 1:
-        img[markers == i] = [0, 255, 0]
-    else:
-        img[markers == i] = [0, 0, 255]
+# Obtén los marcadores de fondo (background_seeds) a partir del umbral de fondo
+_, background_seeds = cv2.threshold(gray, initial_background_threshold, 255, cv2.THRESH_BINARY_INV)
 
-# Colorear las células segmentadas en diferentes colores
-img[markers == -1] = [0, 0, 255]
+markers[background_seeds == 255] = 0
 
-# Mostrar la imagen original con las células segmentadas
-plt.imshow(cv.cvtColor(img, cv.COLOR_BGR2RGB))
-plt.show()
+cv2.watershed(image, markers)
+image[markers == -1] = [0, 0, 255]
+
+# Muestra los objetos segmentados
+cv2.imshow('Segmentation', image)
+
+# Espera hasta que se presione la tecla 'Esc' para continuar
+while True:
+    key = cv2.waitKey(10)
+    if key == 27:
+        break
+
+# Cierra todas las ventanas
+cv2.destroyAllWindows()
