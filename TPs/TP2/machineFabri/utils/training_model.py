@@ -3,7 +3,7 @@ import csv
 
 import numpy as np
 
-from utils.label_converters import label_to_int
+from label_converters import label_to_int
 
 trainData = []
 trainLabels = []
@@ -12,7 +12,7 @@ trainLabels = []
 def load_training_set():
     global trainData
     global trainLabels
-    with open('generated-files/shapes-hu-moments.csv') as csv_file:
+    with open('../generated-files/shapes-hu-moments.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             class_label = row.pop() # saca el ultimo elemento de la lista
