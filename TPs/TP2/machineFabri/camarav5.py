@@ -23,17 +23,24 @@ def update_kernel_size(value):
     if value == 0:
         kernel_size = 1
     kernel_size = value
-def generarHu(listaHu):
-    toR = []
-    for i in listaHu:
-        toR.append(i[0])
 
-    return toR
-def comparar(con1):
-    moments_alphabet = cv2.moments(con1)
-    huMoments_alphabet = cv2.HuMoments(moments_alphabet)
-    etiquetaPredicha = clasificador.predict([generarHu(huMoments_alphabet)])
-    return str(etiquetaPredicha)
+
+#def generarHu(listaHu):
+#    toR = []
+ #   for i in listaHu:
+ #       toR.append(i[0])
+
+ #   return toR
+
+
+def compare(con1):
+    moments = cv2.moments(con1)
+    huMoments = cv2.HuMoments(moments)
+    # Assuming 'huMoments' is a 2D array, convert it to a 1D list
+    huMoments = [moment[0] for moment in huMoments]
+    predicted_label = clasificador.predict(huMoments)
+    return str(predicted_label)
+
 
 # Callback function for the binary threshold trackbar
 def update_threshold(value):
@@ -51,8 +58,7 @@ cv2.namedWindow('Camera')
 cv2.createTrackbar('Kernel Size', 'Camera', 1, 20, update_kernel_size)
 cv2.createTrackbar('Threshold', 'Camera', 128, 255, update_threshold)
 
-codigo = {"1":"Star", "2":"Rectangle", "3":"Triangle"}
-
+codigo = {"1": "Star", "2": "Rectangle", "3": "Triangle"}
 
 kernel_size = 1  # Initial kernel size
 threshold_value = 128  # Initial threshold value
@@ -88,13 +94,13 @@ while True:
         # Calculate the contour's area to filter out the bigger ones
         area = cv2.contourArea(contour)
         if 100 < area < 5000:
-            comparacion = comparar(contour)
+            comparacion = compare(contour)
             if comparacion[1] == '1':
-                valid_contours_stars.append(contour)
+                valid_contours_stars.append(contour)  # star detected
             elif comparacion[1] == '2':
-                valid_contours_rectangles.append(contour)
+                valid_contours_rectangles.append(contour)  # rectangle detected
             elif comparacion[1] == '3':
-                valid_contours_triangles.append(contour)
+                valid_contours_triangles.append(contour)  # triangle detected
             else:
                 invalid_contours.append(contour)
 
@@ -110,8 +116,6 @@ while True:
     for contour in valid_contours_triangles:
         x, y = contour[0][0]
         cv2.putText(frame, "Triangle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
-
 
     # Add labels to the detected but unrecognized shapes
     for contour in invalid_contours:
