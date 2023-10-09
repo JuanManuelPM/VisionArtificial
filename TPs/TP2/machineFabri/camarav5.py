@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
+from joblib import load
 
+# carga el modelo
+clasificador = load('filename.joblib')
 
-# Get contours from a path file
 def get_contour(image, name):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     # Any sharp edges in images are smoothed while minimizing too much blurring.
@@ -21,7 +23,17 @@ def update_kernel_size(value):
     if value == 0:
         kernel_size = 1
     kernel_size = value
+def generarHu(listaHu):
+    toR = []
+    for i in listaHu:
+        toR.append(i[0])
 
+    return toR
+def comparar(con1):
+    moments_alphabet = cv2.moments(con1)
+    huMoments_alphabet = cv2.HuMoments(moments_alphabet)
+    etiquetaPredicha = clasificador.predict([generarHu(huMoments_alphabet)])
+    return str(etiquetaPredicha)
 
 # Callback function for the binary threshold trackbar
 def update_threshold(value):
@@ -39,14 +51,11 @@ cv2.namedWindow('Camera')
 cv2.createTrackbar('Kernel Size', 'Camera', 1, 20, update_kernel_size)
 cv2.createTrackbar('Threshold', 'Camera', 128, 255, update_threshold)
 
+codigo = {"1":"Star", "2":"Rectangle", "3":"Triangle"}
+
+
 kernel_size = 1  # Initial kernel size
 threshold_value = 128  # Initial threshold value
-
-# Get contours of every image from ../static/images to compare with detected ones from camera
-contour_circle = get_contour(cv2.imread('../../static/images/circulo.jpg'), "circle")
-contour_triangle = get_contour(cv2.imread('../../static/images/triangulo.jpg'), "triangle")
-contour_rectangle = get_contour(cv2.imread('../../static/images/cuadrado.jpg'), "rectangle")
-contour_star = get_contour(cv2.imread('../../static/images/star.jpg'), "star")
 
 while True:
     ret, frame = cap.read()  # Read a frame from the camera
@@ -70,7 +79,6 @@ while True:
     # Find and filter contours if contour_detection is enabled
     contours, hierarchy = cv2.findContours(fixed_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
-    valid_contours_circles = []
     valid_contours_triangles = []
     valid_contours_rectangles = []
     valid_contours_stars = []
@@ -80,28 +88,17 @@ while True:
         # Calculate the contour's area to filter out the bigger ones
         area = cv2.contourArea(contour)
         if 100 < area < 5000:
-            # print(cv2.matchShapes(contour, contour_triangle[0], cv2.CONTOURS_MATCH_I2, 0))
-            error_circle = cv2.matchShapes(contour, contour_circle[0], cv2.CONTOURS_MATCH_I2, 0)
-            error_rectangle = cv2.matchShapes(contour, contour_rectangle[0], cv2.CONTOURS_MATCH_I2, 0)
-            error_star = cv2.matchShapes(contour, contour_star[0], cv2.CONTOURS_MATCH_I2, 0)
-
-            if error_circle < 0.03 and error_circle < error_star and error_circle < error_rectangle:
-                valid_contours_circles.append(contour)
-
-            elif error_star < 0.03 and error_star < error_circle and error_star < error_rectangle:
+            comparacion = comparar(contour)
+            if comparacion[1] == '1':
                 valid_contours_stars.append(contour)
-
-            elif error_rectangle < 0.03 and error_rectangle < error_circle and error_rectangle < error_star:
+            elif comparacion[1] == '2':
                 valid_contours_rectangles.append(contour)
-
+            elif comparacion[1] == '3':
+                valid_contours_triangles.append(contour)
             else:
                 invalid_contours.append(contour)
 
     # Add labels to the detected shapes
-    for contour in valid_contours_circles:
-        x, y = contour[0][0]
-        cv2.putText(frame, "Circle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
     for contour in valid_contours_stars:
         x, y = contour[0][0]
         cv2.putText(frame, "Star", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
@@ -110,14 +107,20 @@ while True:
         x, y, _, _ = cv2.boundingRect(contour)
         cv2.putText(frame, "Square", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
 
+    for contour in valid_contours_triangles:
+        x, y = contour[0][0]
+        cv2.putText(frame, "Triangle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+
+
     # Add labels to the detected but unrecognized shapes
     for contour in invalid_contours:
         x, y = contour[0][0]
         cv2.putText(frame, "?", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
 
     # Draw contours in fixed frame
-    cv2.drawContours(frame, valid_contours_circles, -1, (0, 255, 0), 2)
-    cv2.drawContours(frame, valid_contours_stars, -1, (255, 0, 0), 2)
+    cv2.drawContours(frame, valid_contours_stars, -1, (0, 255, 0), 2)
+    cv2.drawContours(frame, valid_contours_triangles, -1, (255, 0, 0), 2)
     cv2.drawContours(frame, valid_contours_rectangles, -1, (0, 255, 255), 2)
     cv2.drawContours(frame, invalid_contours, -1, (0, 0, 255), 2)
 
