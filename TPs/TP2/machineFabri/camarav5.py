@@ -25,12 +25,12 @@ def update_kernel_size(value):
     kernel_size = value
 
 
-#def generarHu(listaHu):
-#    toR = []
- #   for i in listaHu:
- #       toR.append(i[0])
+def generateHu(listaHu):
+    toR = []
+    for i in listaHu:
+        toR.append(i[0])
 
- #   return toR
+    return toR
 
 
 def compare(con1):
@@ -38,7 +38,7 @@ def compare(con1):
     huMoments = cv2.HuMoments(moments)
     # Assuming 'huMoments' is a 2D array, convert it to a 1D list
     huMoments = [moment[0] for moment in huMoments]
-    predicted_label = clasificador.predict(huMoments)
+    predicted_label = clasificador.predict(generateHu(huMoments))
     return str(predicted_label)
 
 
