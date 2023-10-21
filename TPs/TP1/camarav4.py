@@ -8,10 +8,10 @@ def get_contour(image, name):
     # Any sharp edges in images are smoothed while minimizing too much blurring.
     blurred_gray = cv2.GaussianBlur(gray, (5, 5), 0)
     # We also used THRESH_OTSU to analyze the image and determine the threshold.
-    ret3, thresh = cv2.threshold(blurred_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    ret3, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     contour, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     cv2.drawContours(image, contour, -1, (0, 255, 0), 2)
-    cv2.imshow("image" + name, image)
+    # cv2.imshow("image" + name, image)
     return contour
 
 
@@ -20,6 +20,7 @@ def update_kernel_size(value):
     global kernel_size
     if value == 0:
         kernel_size = 1
+
     kernel_size = value
 
 

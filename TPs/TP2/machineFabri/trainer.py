@@ -1,5 +1,7 @@
 from sklearn import tree
 from joblib import dump, load
+import matplotlib
+import matplotlib.pyplot as plt
 
 # dataset
 X = [
@@ -90,12 +92,7 @@ tree.plot_tree(clasificador)
 dump(clasificador, 'filename.joblib')
 
 # en otro programa, se puede cargar el modelo guardado
-clasificadorRecuperado = load('filename.joblib')
-
-from joblib import load
-
-# carga el modelo
-clasificador = load('filename.joblib')
+# clasificadorRecuperado = load('filename.joblib')
 
 # La etiqueta predicha es un número entero
 # Se puede usar el diccionario para obtener la descripción de texto correspondiente.

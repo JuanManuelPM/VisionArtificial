@@ -36,9 +36,7 @@ def generateHu(listaHu):
 def compare(con1):
     moments = cv2.moments(con1)
     huMoments = cv2.HuMoments(moments)
-    # Assuming 'huMoments' is a 2D array, convert it to a 1D list
-    huMoments = [moment[0] for moment in huMoments]
-    predicted_label = clasificador.predict(generateHu(huMoments))
+    predicted_label = clasificador.predict([generateHu(huMoments)])
     return str(predicted_label)
 
 
