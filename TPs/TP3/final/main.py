@@ -1,16 +1,15 @@
 import cv2 as cv
 import numpy as np
 
-# VENTANAS
+# WINDOWS
 window_name = 'threshold'
-watershed_window_name = 'watershed'
 
 # KERNEL
 kernel = np.ones((3, 3), np.uint8)
 
 # TRACKBARS
 trackbar_window_name = 'Trackbars'
-cv.namedWindow(trackbar_window_name)
+cv.namedWindow(trackbar_window_name, cv.WINDOW_AUTOSIZE)  # Use cv.WINDOW_AUTOSIZE flag
 
 max_value_thresh = 255
 thresh_name = 'Threshold'
@@ -22,8 +21,18 @@ erode_name = 'Erode'
 cv.createTrackbar(erode_name, trackbar_window_name, 0, max_value_morph, lambda x: None)
 cv.createTrackbar(dilate_name, trackbar_window_name, 0, max_value_morph, lambda x: None)
 
-# Area classification threshold
-#area_threshold = 200
+# Initial area classification threshold
+initial_area_threshold = 600
+area_threshold = initial_area_threshold
+
+
+def onAreaThresholdChange(x):
+    global area_threshold
+    area_threshold = x
+
+
+# Create a trackbar for area_threshold
+cv.createTrackbar('Area Thresh', trackbar_window_name, initial_area_threshold, 1500, onAreaThresholdChange)
 
 while True:
     # Image
@@ -71,29 +80,47 @@ while True:
     # Count cells
     numberSTR = str(number - 1)
     number_cell = 'Cell count: ' + numberSTR
-    cv.putText(img, number_cell, (10, 800), cv.FONT_HERSHEY_SIMPLEX, 1, color=(0, 0, 255))
+    cv.putText(img, number_cell, (10, 800), cv.FONT_HERSHEY_SIMPLEX, 1, color=(255, 0, 0), thickness=2)
 
     # Create a result_image for area classification
     result_image = img.copy()
 
     # Area classification
+    # Big nuclei are green, small nuclei are yellow
     contours, hierachy = cv.findContours(image=foreground, mode=cv.RETR_EXTERNAL, method=cv.CHAIN_APPROX_NONE)
     cell_count = 0
+    small_nuclei_count = 0
+    big_nuclei_count = 0
     for contour in contours:
-        #if cv.contourArea(contour) < area_threshold:
-           # continue
-        cell_count += 1
-        cv.drawContours(result_image, [contour], -1, (0, 255, 0), 2)
-        # Calculate and display the area of each cell
-        M = cv.moments(contour)
-        if M["m00"] != 0:
-            cX = int(M["m10"] / M["m00"])
-            cY = int(M["m01"] / M["m00"])
-            cv.putText(result_image, f'Area: {cv.contourArea(contour)}', (cX - 20, cY), cv.FONT_HERSHEY_SIMPLEX, 0.5,
-                        (0, 0, 255), 1)
-    cv.imshow('Area classification', result_image)
+        area = cv.contourArea(contour)
+        if area < area_threshold:
+            # For smaller areas, change the contour color to yellow
+            cv.drawContours(result_image, [contour], -1, (0, 255, 255), 2)
+            # Calculate and display the area of each cell
+            M = cv.moments(contour)
+            if M["m00"] != 0:
+                cX = int(M["m10"] / M["m00"])
+                cY = int(M["m01"] / M["m00"])
+                cv.putText(result_image, f'Area: {area}', (cX - 20, cY), cv.FONT_HERSHEY_SIMPLEX, 0.5,
+                           (0, 0, 255), 1)
+            small_nuclei_count += 1
+        else:
+            cell_count += 1
+            big_nuclei_count += 1
+            cv.drawContours(result_image, [contour], -1, (0, 255, 0), 2)
+            # Calculate and display the area of each cell
+            M = cv.moments(contour)
+            if M["m00"] != 0:
+                cX = int(M["m10"] / M["m00"])
+                cY = int(M["m01"] / M["m00"])
+                cv.putText(result_image, f'Area: {area}', (cX - 20, cY), cv.FONT_HERSHEY_SIMPLEX, 0.5,
+                            (0, 0, 255), 1)
 
-    cv.imshow(watershed_window_name, img)
+    # Add big and small nuclei counts above cell count
+    counts_text = f'Big nuclei: {big_nuclei_count} | Small nuclei: {small_nuclei_count}'
+    cv.putText(result_image, counts_text, (10, 50), cv.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
+
+    cv.imshow('Area classification', result_image)
 
     tecla = cv.waitKey(30)
     if tecla == 27:
