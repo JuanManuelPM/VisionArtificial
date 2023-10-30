@@ -3,13 +3,16 @@ import math
 import numpy as np
 from joblib import load
 
-from proyect2_martu import get_trained_model_alt
+from trainer import get_trained_model_alt, get_trained_model, read_labels
 from hu_moments_generation import generate_hu_moments_file
 
 val = 0
 generate_hu_moments_file()
-
 model = get_trained_model_alt()
+initial_min_area = 10
+initial_max_area = 301
+min_area = initial_min_area
+max_area = initial_max_area
 
 
 def get_contour(image, name):
@@ -58,7 +61,12 @@ def compare(con1):
 def update_threshold(value):
     global threshold_value
     threshold_value = value
-
+def update_Min_area(value):
+    global min_area
+    min_area = value
+def update_Max_area(value):
+    global max_area
+    max_area = value
 
 # Initialize camera capture
 cap = cv2.VideoCapture(0)  # 0 represents the default camera
@@ -69,8 +77,10 @@ cv2.namedWindow('Camera')
 # Create trackbars for kernel size, binary threshold, and contour detection
 cv2.createTrackbar('Kernel Size', 'Camera', 1, 20, update_kernel_size)
 cv2.createTrackbar('Threshold', 'Camera', 128, 255, update_threshold)
+cv2.createTrackbar('Min_Area', 'Camera', 0, 300, update_Min_area)
+cv2.createTrackbar('Max_Area', 'Camera', 301, 100000, update_Max_area)
 
-codigo = {"1": "Star", "2": "Rectangle", "3": "Triangle"}
+codigo = {"1": "Star", "2": "Square", "3": "Triangle", "4": "Invalid"}
 
 kernel_size = 1  # Initial kernel size
 threshold_value = 128  # Initial threshold value
@@ -105,7 +115,7 @@ while True:
     for contour in contours:
         # Calculate the contour's area to filter out the bigger ones
         area = cv2.contourArea(contour)
-        if 100 < area < 5000:
+        if min_area < area < max_area:
             comparacion = compare(contour)
             if comparacion == 2:
                 valid_contours_rectangles.append(contour)  # rectangle detected
@@ -119,27 +129,27 @@ while True:
     # Add labels to the detected shapes
     for contour in valid_contours_stars:
         x, y = contour[0][0]
-        cv2.putText(frame, "Star", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+        cv2.putText(frame, "Star", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     for contour in valid_contours_rectangles:
         x, y, _, _ = cv2.boundingRect(contour)
-        cv2.putText(frame, "Square", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+        cv2.putText(frame, "Square", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
 
     for contour in valid_contours_triangles:
         x, y = contour[0][0]
-        cv2.putText(frame, "Triangle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+        cv2.putText(frame, "Triangle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
 
     # Add labels to the detected but unrecognized shapes
     for contour in invalid_contours:
         x, y = contour[0][0]
-        cv2.putText(frame, "?", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+        cv2.putText(frame, "?", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
 
     # Draw contours in fixed frame
     cv2.drawContours(frame, valid_contours_stars, -1, (0, 255, 0), 2)
     cv2.drawContours(frame, valid_contours_triangles, -1, (255, 0, 0), 2)
-    cv2.drawContours(frame, valid_contours_rectangles, -1, (0, 255, 255), 2)
-    cv2.drawContours(frame, invalid_contours, -1, (0, 0, 255), 2)
+    cv2.drawContours(frame, valid_contours_rectangles, -1, (0, 0, 255), 2)
+    cv2.drawContours(frame, invalid_contours, -1, (0, 255, 255), 2)
 
     # Convert binary to 3-frame channel to show
     binary_frame_3channel = cv2.cvtColor(fixed_frame, cv2.COLOR_GRAY2BGR)

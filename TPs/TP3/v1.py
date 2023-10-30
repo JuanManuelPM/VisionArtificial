@@ -11,7 +11,7 @@ image = cv2.imread('../../static/images/celulas.png')
 
 # Convierte la imagen a escala de grises
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
+import numpy as np
 
 # Función para agregar una semilla en el fondo
 def add_background_seed(background_threshold):
