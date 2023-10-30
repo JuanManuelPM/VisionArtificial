@@ -1,9 +1,17 @@
 import cv2
+import math
 import numpy as np
 from joblib import load
+from label_conv import int_to_label
+from training_model import train_model
 
 # carga el modelo
 clasificador = load('filename.joblib')
+
+
+val = 0
+model = train_model()
+
 
 def get_contour(image, name):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -36,8 +44,17 @@ def generateHu(listaHu):
 def compare(con1):
     moments = cv2.moments(con1)
     huMoments = cv2.HuMoments(moments)
-    predicted_label = clasificador.predict([generateHu(huMoments)])
-    return str(predicted_label)
+
+    # Log scale hu moments
+    for i in range(0, 7):
+        huMoments[i] = -1 * math.copysign(1.0, huMoments[i]) * math.log10(
+            abs(huMoments[i]))  # Mapeo para agrandar la escala.
+    hu_moments = huMoments
+
+    sample = np.array([hu_moments], dtype=np.float32)  # numpy
+    #predictedLabel
+    testResponse = model.predict(sample)[1]  # Predice la clase de cada file
+    return str(testResponse)
 
 
 # Callback function for the binary threshold trackbar
@@ -86,6 +103,7 @@ while True:
     valid_contours_triangles = []
     valid_contours_rectangles = []
     valid_contours_stars = []
+    valid_contours_lightning = []
     invalid_contours = []
 
     for contour in contours:
@@ -94,11 +112,13 @@ while True:
         if 100 < area < 5000:
             comparacion = compare(contour)
             if comparacion[1] == '1':
-                valid_contours_stars.append(contour)  # star detected
-            elif comparacion[1] == '2':
                 valid_contours_rectangles.append(contour)  # rectangle detected
-            elif comparacion[1] == '3':
+            elif comparacion[1] == '2':
                 valid_contours_triangles.append(contour)  # triangle detected
+            elif comparacion[1] == '3':
+                valid_contours_stars.append(contour)  # stars detected
+            elif comparacion[1] == '4':
+                valid_contours_lightning.append(contour)  # lightning detected
             else:
                 invalid_contours.append(contour)
 
@@ -115,6 +135,10 @@ while True:
         x, y = contour[0][0]
         cv2.putText(frame, "Triangle", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
+    for contour in valid_contours_lightning:
+        x, y = contour[0][0]
+        cv2.putText(frame, "Lightning", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
     # Add labels to the detected but unrecognized shapes
     for contour in invalid_contours:
         x, y = contour[0][0]
@@ -124,6 +148,7 @@ while True:
     cv2.drawContours(frame, valid_contours_stars, -1, (0, 255, 0), 2)
     cv2.drawContours(frame, valid_contours_triangles, -1, (255, 0, 0), 2)
     cv2.drawContours(frame, valid_contours_rectangles, -1, (0, 255, 255), 2)
+    cv2.drawContours(frame, valid_contours_lightning, -1, (10, 50, 255), 2)
     cv2.drawContours(frame, invalid_contours, -1, (0, 0, 255), 2)
 
     # Convert binary to 3-frame channel to show

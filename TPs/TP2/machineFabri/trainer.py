@@ -97,3 +97,5 @@ dump(clasificador, 'filename.joblib')
 # La etiqueta predicha es un número entero
 # Se puede usar el diccionario para obtener la descripción de texto correspondiente.
 etiquetaPredicha = clasificador.predict(X)
+
+
