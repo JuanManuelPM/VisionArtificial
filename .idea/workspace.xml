@@ -5,10 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c017c972-6546-4bad-a035-1800efa2041b" name="Changes" comment="camara v5">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/camarav6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/filename.train_proy2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/hu_moments_generation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/proyect2_martu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59885270836995.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59890470749637.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59902845473437.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59912156636946.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59923139060139.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59930176412984.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7855464921353.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7857535255683.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7863278021346.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7868143596992.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7871082409942.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7874819423126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59602653255951.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59610980537357.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59672513950306.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59675722489583.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59681693731963.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59822137609095.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/7995122422175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8009967538794.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8013865385982.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8016101035345.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8017934718354.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8021250335648.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59438089703839.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59447254739225.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59456908295917.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59463575781547.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59532309775096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59540037485444.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8207765333325.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8212306212031.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8225122339884.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8234165017243.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8249913438964.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8260526081290.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/classifier.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/Guido/tp2/classifier.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/decistion_tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/Guido/tp2/decistion_tree.png" afterDir="false" />
     </list>
     <list id="41c3af69-e47c-401b-a6a6-eddb3a95c998" name="Changes by maxim" comment="Changes by maxim">
       <change beforePath="$PROJECT_DIR$/TPs/TP2/machineFabri/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/main.py" afterDir="false" />
@@ -40,35 +77,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jmpmc/PycharmProjects/visionArtificial/TPs/TP2/machineFabri&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jmpmc/PycharmProjects/visionArtificial/TPs/TP2/final",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\final" />
+      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\proyecto2-main" />
+      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri\final" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2" />
-      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\Guido\tp2\10stars" />
-      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs" />
-      <recent name="C:\Users\usuario\PycharmProjects\VA\static\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\final" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2" />
+      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\proyecto2-main" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri\utils" />
-      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri\main" />
-      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP3" />
     </key>
   </component>
   <component name="RunManager">
@@ -143,7 +180,7 @@
       <workItem from="1697894372968" duration="3039000" />
       <workItem from="1697901592312" duration="2590000" />
       <workItem from="1698601044586" duration="908000" />
-      <workItem from="1698669679628" duration="463000" />
+      <workItem from="1698669679628" duration="5675000" />
     </task>
     <task id="LOCAL-00001" summary="borre boludeces">
       <option name="closed" value="true" />
@@ -241,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696870850382</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="camara v5">
+      <option name="closed" value="true" />
+      <created>1698670151937</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698670151937</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +315,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TPs/TP2/final/camarav6.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -285,24 +337,26 @@
     <SUITE FILE_PATH="coverage/visionArtificial$form_detection_label.coverage" NAME="form_detection_label Coverage Results" MODIFIED="1697903438300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/new/TP2" />
     <SUITE FILE_PATH="coverage/visionArtificial$Deteccion.coverage" NAME="Deteccion Coverage Results" MODIFIED="1692121758156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$camara.coverage" NAME="camara Coverage Results" MODIFIED="1692123658496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$hu_moments_generation.coverage" NAME="hu_moments_generation Coverage Results" MODIFIED="1698674236038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav5.coverage" NAME="camarav5 Coverage Results" MODIFIED="1697895902513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
+    <SUITE FILE_PATH="coverage/visionArtificial$training_model.coverage" NAME="training_model Coverage Results" MODIFIED="1696624587238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri/utils" />
+    <SUITE FILE_PATH="coverage/visionArtificial$proyect2_martu.coverage" NAME="proyect2_martu Coverage Results" MODIFIED="1698670702171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav2.coverage" NAME="camarav2 Coverage Results" MODIFIED="1692124673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$testContours2.coverage" NAME="testContours2 Coverage Results" MODIFIED="1692995543602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$watershedEmi.coverage" NAME="watershedEmi Coverage Results" MODIFIED="1693592302593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$main_proyect2.coverage" NAME="main_proyect2 Coverage Results" MODIFIED="1698672351192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
+    <SUITE FILE_PATH="coverage/visionArtificial$watershedding.coverage" NAME="watershedding Coverage Results" MODIFIED="1693343142959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$v1.coverage" NAME="v1 Coverage Results" MODIFIED="1694196930984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$watershedTest.coverage" NAME="watershedTest Coverage Results" MODIFIED="1693344206589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/testeoWatershed" />
     <SUITE FILE_PATH="coverage/visionArtificial$tp1_main.coverage" NAME="tp1_main Coverage Results" MODIFIED="1692452568054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$camarav4.coverage" NAME="camarav4 Coverage Results" MODIFIED="1692994643724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$main.coverage" NAME="main Coverage Results" MODIFIED="1696624818668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri/utils" />
     <SUITE FILE_PATH="coverage/visionArtificial$trainer.coverage" NAME="trainer Coverage Results" MODIFIED="1697895896520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camarav5.coverage" NAME="camarav5 Coverage Results" MODIFIED="1697895902513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
-    <SUITE FILE_PATH="coverage/visionArtificial$training_model.coverage" NAME="training_model Coverage Results" MODIFIED="1696624587238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri/utils" />
-    <SUITE FILE_PATH="coverage/visionArtificial$proyect2_martu.coverage" NAME="proyect2_martu Coverage Results" MODIFIED="1698669949561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camarav2.coverage" NAME="camarav2 Coverage Results" MODIFIED="1692124673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$testContours2.coverage" NAME="testContours2 Coverage Results" MODIFIED="1692995543602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$watershedEmi.coverage" NAME="watershedEmi Coverage Results" MODIFIED="1693592302593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$main_proyect2.coverage" NAME="main_proyect2 Coverage Results" MODIFIED="1698670049910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
-    <SUITE FILE_PATH="coverage/visionArtificial$watershedding.coverage" NAME="watershedding Coverage Results" MODIFIED="1693343142959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
     <SUITE FILE_PATH="coverage/visionArtificial$DescriptorGenerator.coverage" NAME="DescriptorGenerator Coverage Results" MODIFIED="1696113136820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/TP2" />
     <SUITE FILE_PATH="coverage/visionArtificial$google.coverage" NAME="google Coverage Results" MODIFIED="1693594913118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav6.coverage" NAME="camarav6 Coverage Results" MODIFIED="1698675053760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/final" />
     <SUITE FILE_PATH="coverage/visionArtificial$camarav3.coverage" NAME="camarav3 Coverage Results" MODIFIED="1692455332292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$gpt.coverage" NAME="gpt Coverage Results" MODIFIED="1694199420340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
     <SUITE FILE_PATH="coverage/visionArtificial$googlev2.coverage" NAME="googlev2 Coverage Results" MODIFIED="1694195145670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$v1.coverage" NAME="v1 Coverage Results" MODIFIED="1694196930984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$watershedTest.coverage" NAME="watershedTest Coverage Results" MODIFIED="1693344206589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/testeoWatershed" />
   </component>
 </project>
