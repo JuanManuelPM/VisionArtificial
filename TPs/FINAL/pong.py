@@ -11,8 +11,8 @@ cap.set(4, 720)
 imgBackground = cv2.imread("Resources/Background.png")
 imgGameOver = cv2.imread("Resources/gameOver.png")
 imgBall = cv2.imread("Resources/Ball.png", cv2.IMREAD_UNCHANGED)
-imgBat1 = cv2.imread("Resources/bat1.png", cv2.IMREAD_UNCHANGED)
-imgBat2 = cv2.imread("Resources/bat2.png", cv2.IMREAD_UNCHANGED)
+imgBat1 = cv2.imread("Resources/Sprite-0001.png", cv2.IMREAD_UNCHANGED)
+imgBat2 = cv2.imread("Resources/Sprite-0002.png", cv2.IMREAD_UNCHANGED)
 
 # Hand Detector
 detector = HandDetector(detectionCon=0.8, maxHands=2)
