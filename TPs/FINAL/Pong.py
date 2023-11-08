@@ -1,7 +1,8 @@
 import cv2
 import cvzone
-from cvzone.HandTrackingModule import HandDetector
+from HandTrackingModule import HandDetector
 import numpy as np
+from utils.Utils import overlayPNG
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
@@ -77,7 +78,7 @@ while True:
         ballPos[1] += speedY
 
         # Draw the ball
-        img = cvzone.overlayPNG(img, imgBall, ballPos)
+        img = overlayPNG(img, imgBall, ballPos)
 
         cv2.putText(img, str(score[0]), (300, 650), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 255, 255), 5)
         cv2.putText(img, str(score[1]), (900, 650), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 255, 255), 5)
