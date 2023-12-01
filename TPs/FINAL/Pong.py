@@ -8,7 +8,7 @@ cap.set(4, 720)
 
 # Importing all images
 imgBackground = cv2.imread("resources/Background.png")
-imgGameOver = cv2.imread("resources/gameOver.png")
+imgGameOver = cv2.imread("resources/gameOver2.png")
 imgBall = cv2.imread("resources/Ball.png", cv2.IMREAD_UNCHANGED)
 imgBat1 = cv2.imread("resources/Sprite-0001.png", cv2.IMREAD_UNCHANGED)
 imgBat2 = cv2.imread("resources/Sprite-0002.png", cv2.IMREAD_UNCHANGED)
