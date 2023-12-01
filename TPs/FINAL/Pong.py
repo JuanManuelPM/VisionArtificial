@@ -7,9 +7,9 @@ cap.set(3, 1280)
 cap.set(4, 720)
 
 # Importing all images
-imgBackground = cv2.imread("resources/Background.png")
+imgBackground = cv2.imread("resources/Background_new.png")
 imgGameOver = cv2.imread("resources/gameOver.png")
-imgBall = cv2.imread("resources/Ball.png", cv2.IMREAD_UNCHANGED)
+imgBall = cv2.imread("resources/Ball.png")
 imgBat1 = cv2.imread("resources/Sprite-0001.png", cv2.IMREAD_UNCHANGED)
 imgBat2 = cv2.imread("resources/Sprite-0002.png", cv2.IMREAD_UNCHANGED)
 
@@ -95,7 +95,7 @@ while True:
         ballPos[1] += speedY
 
         # Draw the ball
-        cv2.circle(img, (int(ballPos[0]), int(ballPos[1])), 20, (255, 255, 255), -1)
+        cv2.circle(img, (int(ballPos[0]), int(ballPos[1])), 20, (0, 0, 0), -1)
 
         cv2.putText(img, str(score[0]), (300, 650), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 255, 255), 5)
         cv2.putText(img, str(score[1]), (900, 650), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 255, 255), 5)
