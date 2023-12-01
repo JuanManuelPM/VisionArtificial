@@ -1,19 +1,17 @@
 import cv2
-import cvzone
 from HandTrackingModule import HandDetector
 import numpy as np
-from utils.Utils import overlayPNG
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
 
 # Importing all images
-imgBackground = cv2.imread("Resources/Background.png")
-imgGameOver = cv2.imread("Resources/gameOver.png")
-imgBall = cv2.imread("Resources/Ball.png", cv2.IMREAD_UNCHANGED)
-imgBat1 = cv2.imread("Resources/Sprite-0001.png", cv2.IMREAD_UNCHANGED)
-imgBat2 = cv2.imread("Resources/Sprite-0002.png", cv2.IMREAD_UNCHANGED)
+imgBackground = cv2.imread("resources/Background.png")
+imgGameOver = cv2.imread("resources/gameOver.png")
+imgBall = cv2.imread("resources/Ball.png", cv2.IMREAD_UNCHANGED)
+imgBat1 = cv2.imread("resources/Sprite-0001.png", cv2.IMREAD_UNCHANGED)
+imgBat2 = cv2.imread("resources/Sprite-0002.png", cv2.IMREAD_UNCHANGED)
 
 # Hand Detector
 detector = HandDetector(detectionCon=0.8, maxHands=2)
@@ -22,6 +20,7 @@ detector = HandDetector(detectionCon=0.8, maxHands=2)
 ballPos = [100, 100]
 speedX = 15
 speedY = 15
+speed_increment = 1.1  # Increment factor for speed after each bounce on players' bats
 gameOver = False
 score = [0, 0]
 
@@ -36,7 +35,7 @@ while True:
     # Overlaying the background image
     img = cv2.addWeighted(img, 0.2, imgBackground, 0.8, 0)
 
-    # Check for hands
+    # Draw the bat overlays
     if hands:
         for hand in hands:
             x, y, w, h = hand['bbox']
@@ -45,18 +44,37 @@ while True:
             y1 = np.clip(y1, 20, 415)
 
             if hand['type'] == "Left":
-                img = cvzone.overlayPNG(img, imgBat1, (59, y1))
+                img[y1:y1 + h1, 59:59 + w1] = imgBat1[:, :, :3]  # Overlay bat1
+
                 if 59 < ballPos[0] < 59 + w1 and y1 < ballPos[1] < y1 + h1:
-                    speedX = -speedX
+                    speedX = -speedX * speed_increment
                     ballPos[0] += 30
                     score[0] += 1
 
-            if hand['type'] == "Right":
-                img = cvzone.overlayPNG(img, imgBat2, (1195, y1))
-                if 1195 - 50 < ballPos[0] < 1195 and y1 < ballPos[1] < y1 + h1:
-                    speedX = -speedX
-                    ballPos[0] -= 30
-                    score[1] += 1
+            # Draw the bat overlays
+            if hands:
+                for hand in hands:
+                    x, y, w, h = hand['bbox']
+                    h1, w1, _ = imgBat1.shape
+                    y1 = y - h1 // 2
+                    y1 = np.clip(y1, 20, 415)
+
+                    if hand['type'] == "Left":
+                        img[y1:y1 + h1, 59:59 + w1] = imgBat1[:, :, :3]  # Overlay bat1
+
+                        if 59 < ballPos[0] < 59 + w1 and y1 < ballPos[1] < y1 + h1:
+                            speedX = -speedX * speed_increment
+                            ballPos[0] += 30
+                            score[0] += 1
+
+                    if hand['type'] == "Right":
+                        x2 = 1195 - w1 + 25  # Adjust this value to move the second bat to the right
+                        img[y1:y1 + h1, x2:x2 + w1] = imgBat2[:, :, :3]  # Overlay bat2
+
+                        if x2 < ballPos[0] < x2 + w1 and y1 < ballPos[1] < y1 + h1:
+                            speedX = -speedX * speed_increment
+                            ballPos[0] -= 30
+                            score[1] += 1
 
     # Game Over
     if ballPos[0] < 40 or ballPos[0] > 1200:
@@ -69,7 +87,6 @@ while True:
 
     # If game not over move the ball
     else:
-
         # Move the Ball
         if ballPos[1] >= 500 or ballPos[1] <= 10:
             speedY = -speedY
@@ -78,7 +95,7 @@ while True:
         ballPos[1] += speedY
 
         # Draw the ball
-        img = overlayPNG(img, imgBall, ballPos)
+        cv2.circle(img, (int(ballPos[0]), int(ballPos[1])), 20, (255, 255, 255), -1)
 
         cv2.putText(img, str(score[0]), (300, 650), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 255, 255), 5)
         cv2.putText(img, str(score[1]), (900, 650), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 255, 255), 5)
@@ -91,6 +108,7 @@ while True:
         ballPos = [100, 100]
         speedX = 15
         speedY = 15
+        speed_increment = 1.1  # Reset speed increment
         gameOver = False
         score = [0, 0]
-        imgGameOver = cv2.imread("Resources/gameOver.png")
+        imgGameOver = cv2.imread("resources/gameOver.png")
