@@ -8,7 +8,7 @@ cap.set(4, 720)
 
 # Importing all images
 imgBackground = cv2.imread("resources/Background_new.png")
-imgGameOver = cv2.imread("resources/gameOver.png")
+imgGameOver = cv2.imread("resources/gameOver2.png")
 imgBall = cv2.imread("resources/Ball.png")
 imgBat1 = cv2.imread("resources/Sprite-0001.png", cv2.IMREAD_UNCHANGED)
 imgBat2 = cv2.imread("resources/Sprite-0002.png", cv2.IMREAD_UNCHANGED)
@@ -111,4 +111,4 @@ while True:
         speed_increment = 1.1  # Reset speed increment
         gameOver = False
         score = [0, 0]
-        imgGameOver = cv2.imread("resources/gameOver.png")
+        imgGameOver = cv2.imread("resources/gameOver2.png")
