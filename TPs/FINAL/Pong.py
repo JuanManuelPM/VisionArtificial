@@ -83,7 +83,7 @@ while True:
     if gameOver:
         img = imgGameOver
         cv2.putText(img, str(score[1] + score[0]).zfill(2), (585, 360), cv2.FONT_HERSHEY_COMPLEX,
-                    2.5, (200, 0, 200), 5)
+                    2.5, (0, 0, 0), 5)
 
     # If game not over move the ball
     else:

@@ -10,7 +10,7 @@ val = 0
 generate_hu_moments_file()
 model = get_trained_model_alt()
 initial_min_area = 10
-initial_max_area = 301
+initial_max_area = 1500
 min_area = initial_min_area
 max_area = initial_max_area
 

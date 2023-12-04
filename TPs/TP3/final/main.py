@@ -69,8 +69,8 @@ while True:
     # Now, mark the region of the unknown with zero
     markers[unknown == 255] = 0
 
-    map = np.uint8(255 * markers / number)
-    color_map = cv.applyColorMap(map, cv.COLORMAP_JET)
+    markers_map = np.uint8(255 * markers / number)
+    color_map = cv.applyColorMap(markers_map, cv.COLORMAP_JET)
     cv.imshow('color_map', color_map)
 
     # Segmentation with watershed
@@ -114,7 +114,7 @@ while True:
                 cX = int(M["m10"] / M["m00"])
                 cY = int(M["m01"] / M["m00"])
                 cv.putText(result_image, f'Area: {area}', (cX - 20, cY), cv.FONT_HERSHEY_SIMPLEX, 0.5,
-                            (0, 0, 255), 1)
+                           (0, 0, 255), 1)
 
     # Add big and small nuclei counts above cell count
     counts_text = f'Big nuclei: {big_nuclei_count} | Small nuclei: {small_nuclei_count}'

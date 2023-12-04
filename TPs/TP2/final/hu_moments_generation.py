@@ -14,12 +14,12 @@ def write_hu_moments(label, writer):
     for mom in hu_moments:
         flattened = mom.ravel()  # paso de un array de arrays a un array simple.
         row = numpy.append(flattened, label)  # le metes el flattened array y le agregas el label
-        writer.writerow(row)  # Escribe una linea en el archivo.
+        writer.writerow(row)  # Escribe una línea en el archivo.
 
 
 def generate_hu_moments_file():
     with open('shapes-hu-moments.csv', 'w',
-              newline='') as file:  # Se genera un archivo nuevo (W=Write)
+              newline='') as file:
         writer = csv.writer(file)
         # Ahora escribo los momentos de Hu de cada uno de las figuras. Con el string "rectangle...etc" busca en la carpeta donde estan cada una de las imagenes
         # generar los momentos de Hu y los escribe sobre este archivo. (LOS DE ENTRENAMIENTO).
@@ -29,7 +29,7 @@ def generate_hu_moments_file():
         write_hu_moments("invalid", writer)
 
 
-# Encargada de generar los momentos de Hu para las imagenes
+# Encargada de generar los momentos de Hu para las images
 def hu_moments_of_file(filename):
     image = cv2.imread(filename)
     gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)

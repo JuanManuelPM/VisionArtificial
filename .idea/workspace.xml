@@ -4,52 +4,511 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c017c972-6546-4bad-a035-1800efa2041b" name="Changes" comment="camara v5">
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/camarav6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/filename.train_proy2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/hu_moments_generation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/proyect2_martu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59885270836995.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59890470749637.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59902845473437.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59912156636946.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59923139060139.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/59930176412984.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7855464921353.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7857535255683.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7863278021346.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7868143596992.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7871082409942.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/rectangle/7874819423126.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59602653255951.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59610980537357.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59672513950306.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59675722489583.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59681693731963.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/59822137609095.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/7995122422175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8009967538794.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8013865385982.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8016101035345.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8017934718354.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/star/8021250335648.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59438089703839.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59447254739225.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59456908295917.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59463575781547.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59532309775096.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/59540037485444.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8207765333325.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8212306212031.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8225122339884.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8234165017243.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8249913438964.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TPs/TP2/final/shapes/triangle/8260526081290.png" afterDir="false" />
+    <list default="true" id="c017c972-6546-4bad-a035-1800efa2041b" name="Changes" comment="final_V2">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/visionArtificial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/visionArtificial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/FINAL/Pong.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/FINAL/Pong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/FINAL/utils/Utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/1 no.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/10 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/11 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/12 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/13 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/14 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/15 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/17 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/18 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/19 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/2 no.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/20 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/21 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/22 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/23 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/24 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/25 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/26 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/27 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/28 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/29 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/3 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/30 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/31 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/32 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/33 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/34 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/35 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/36 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/37 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/38 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/39 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/4 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/40 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/41 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/42 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/43 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/44no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/45 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/46 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/47 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/48 no.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/49 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/5 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/50 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/6 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/7 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/8 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/9 no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N19.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N20.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N22.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N26.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/N6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/No22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 91.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 923.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no 99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/no/no.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y100.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y109.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y111.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y112.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y113.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y114.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y115.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y116.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y117.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y120.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y146.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y147.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y148.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y155.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y156.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y157.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y158.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y159.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y16.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y160.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y161.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y163.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y164.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y165.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y166.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y167.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y170.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y18.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y182.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y183.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y184.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y188.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y19.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y192.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y193.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y195.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y23.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y242.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y243.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y244.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y245.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y246.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y247.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y248.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y249.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y251.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y252.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y253.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y254.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y255.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y256.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y258.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y259.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y36.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y40.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y44.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y45.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y47.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y49.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y50.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y58.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y59.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y65.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y66.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y67.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y71.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y75.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y85.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y86.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y89.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y97.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y98.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/finalProject/yes/Y99.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/testeoWatershed/coins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/testeoWatershed/watershedTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/IriunWebcam-2.7.5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/ObjID.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/circulo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/intentoEmi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/messi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/rectangulo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/shapes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/shapes2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp1/triangulo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10circles/c9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10stars/e9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/10triangles/t9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/DescriptorGenerator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/Predictor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/classifier.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/decistion_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp2/trainer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp3/coins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp3/levadura.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp3/pothole.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp3/watershedEmi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Guido/tp3/watershedding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP2/final/camarav6.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP2/final/camarav6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP2/final/hu_moments_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP2/final/hu_moments_generation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP2/final/shapes/invalid/hexagon_icon_136514.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP2/final/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP2/final/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP3/final/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/TP3/final/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP3/google.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP3/googlev2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/TP3/gpt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/Prueba.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/data/43627559_codo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/data/44131030_codo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/data/44131030_hombro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/data/rango_normal.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/fingers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/moment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/nodered.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/streamlit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/tempCodeRunnerFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Proyecto/tempCodeRunnerFile.python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Tp3/levadura.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/Tp3/tp3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/TpDeteccion/avion.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/TpDeteccion/circulo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/TpDeteccion/cuadrado.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/TpDeteccion/estrella.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/TpDeteccion/tp1conImg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/HuMom.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/descriptor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/filename.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Avion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Avion2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Avion3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Avion4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Avion5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Circulo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Circulo2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Circulo3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Circulo4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Cuadrado.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Cuadrado2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Cuadrado3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Cuadrado4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Cuadrado5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Estrella.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Estrella2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Estrella3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Estrella4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/imagenes/Estrella5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/ntrenador.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/tp2/tp2conImg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/in_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/lib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/generated-files/shapes-hu-moments.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/59602653255951.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/59610980537357.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/59672513950306.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/59675722489583.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/59681693731963.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/59822137609095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/7995122422175.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/8009967538794.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/8013865385982.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/8016101035345.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/8017934718354.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/5-point-star/8021250335648.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/59885270836995.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/59890470749637.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/59902845473437.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/59912156636946.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/59923139060139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/59930176412984.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/7855464921353.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/7857535255683.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/7863278021346.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/7868143596992.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/7871082409942.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/rectangle/7874819423126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-camara-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-camara-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-camara-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/rect-camara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-camara-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-camara-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-camara-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/star-camara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/test.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/traingle-camara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/triangle-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/triangle-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/triangle-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/triangle-camara-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/triangle-camara-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/testing/triangle-camara-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/59438089703839.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/59447254739225.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/59456908295917.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/59463575781547.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/59532309775096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/59540037485444.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/8207765333325.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/8212306212031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/8225122339884.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/8234165017243.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/8249913438964.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/shapes/triangle/8260526081290.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/utils/hu_moments_generation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/utils/label_converters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/utils/testing_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/utils/training_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_background/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_background/background_subtractor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_binaria/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_binaria/binary_images.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_binaria/umbral_adapt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_binaria/umbral_auto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_calibracion/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_calibracion/calibration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_comp_conectados/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_comp_conectados/color_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_comp_conectados/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_contornos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_contornos/aprox_contours.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_contornos/contornos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_contornos/other_resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_homografia/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_homografia/homografia.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_momentos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_momentos/moments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_optical_flow/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_optical_flow/dense.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_optical_flow/sparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_pose/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_pose/tp_pose.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_segmentacion/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_segmentacion/grabcut.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_segmentacion/watershed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_select_roi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_select_roi/select_roi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_tracker/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/practica_tracker/tracker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/pytutorial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/alphabet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/boca2000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/celulas.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/letterSOne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/letterSTwo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/messi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/noise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/patente.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/pool.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/pool2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/rayo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/road.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/tenis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/images/water_coins.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/videos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/videos/carsRt9_3.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/videos/race.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/videos/vtest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/static/vtest.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/template_matching.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/contour.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/form_detection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/frame_editor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/hu_moments.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/moment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tp_deteccion/trackbar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/tutorial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/webcamLoop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/levadura.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/levadura.png" afterDir="false" />
     </list>
-    <list id="41c3af69-e47c-401b-a6a6-eddb3a95c998" name="Changes by maxim" comment="Changes by maxim">
-      <change beforePath="$PROJECT_DIR$/TPs/TP2/machineFabri/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TPs/Timo/visionArtificial-master/machine/main.py" afterDir="false" />
-    </list>
+    <list id="41c3af69-e47c-401b-a6a6-eddb3a95c998" name="Changes by maxim" comment="Changes by maxim" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,26 +531,29 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2TycJ194FsP5432DzXfjnqcIc6t" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/jmpmc/PycharmProjects/visionArtificial/TPs/TP2/final",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jmpmc/PycharmProjects/visionArtificial/TPs/TP2/final&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\final" />
@@ -101,14 +563,14 @@
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxim\faculty\VA\TPs\FINAL\resources" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\final" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\proyecto2-main" />
       <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri" />
-      <recent name="C:\Users\jmpmc\PycharmProjects\visionArtificial\TPs\TP2\machineFabri\utils" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="DescriptorGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="visionArtificial" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,6 +643,21 @@
       <workItem from="1697901592312" duration="2590000" />
       <workItem from="1698601044586" duration="908000" />
       <workItem from="1698669679628" duration="5675000" />
+      <workItem from="1699449283935" duration="595000" />
+      <workItem from="1699450853779" duration="3445000" />
+      <workItem from="1699456358995" duration="1160000" />
+      <workItem from="1699552505684" duration="1338000" />
+      <workItem from="1699554691904" duration="1685000" />
+      <workItem from="1699561147261" duration="1265000" />
+      <workItem from="1699899119984" duration="5513000" />
+      <workItem from="1699909154971" duration="94000" />
+      <workItem from="1699909413813" duration="27000" />
+      <workItem from="1700491897146" duration="1051000" />
+      <workItem from="1700495783924" duration="99000" />
+      <workItem from="1700875108317" duration="169000" />
+      <workItem from="1701442862566" duration="2519000" />
+      <workItem from="1701639011670" duration="3188000" />
+      <workItem from="1701715942484" duration="923000" />
     </task>
     <task id="LOCAL-00001" summary="borre boludeces">
       <option name="closed" value="true" />
@@ -286,7 +763,55 @@
       <option name="project" value="LOCAL" />
       <updated>1698670151937</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="final_1">
+      <option name="closed" value="true" />
+      <created>1699450934144</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699450934144</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new sprites&#10;Sprite-0001.png &amp; Sprite-0002.png">
+      <option name="closed" value="true" />
+      <created>1699451510611</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699451510611</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added HandTrackingModule.py &amp; Utils.py">
+      <option name="closed" value="true" />
+      <created>1699452277550</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699452277550</updated>
+    </task>
+    <task id="LOCAL-00017" summary="final">
+      <option name="closed" value="true" />
+      <created>1701442912404</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701442912404</updated>
+    </task>
+    <task id="LOCAL-00018" summary="final_V2">
+      <option name="closed" value="true" />
+      <created>1701446089687</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701446089687</updated>
+    </task>
+    <task id="LOCAL-00019" summary="final_V2">
+      <option name="closed" value="true" />
+      <created>1701452312473</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701452312473</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,15 +836,20 @@
     <MESSAGE value="tp2" />
     <MESSAGE value="Changes by maxim" />
     <MESSAGE value="camara v5" />
-    <option name="LAST_COMMIT_MESSAGE" value="camara v5" />
+    <MESSAGE value="final_1" />
+    <MESSAGE value="new sprites&#10;Sprite-0001.png &amp; Sprite-0002.png" />
+    <MESSAGE value="added HandTrackingModule.py &amp; Utils.py" />
+    <MESSAGE value="final" />
+    <MESSAGE value="final_V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="final_V2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TPs/TP2/final/camarav6.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="1" />
+          <line>114</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -332,31 +862,53 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/visionArtificial$chatGPT.coverage" NAME="chatGPT Coverage Results" MODIFIED="1692482137488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$tp2conImg.coverage" NAME="tp2conImg Coverage Results" MODIFIED="1696626835046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
-    <SUITE FILE_PATH="coverage/visionArtificial$form_detection_label.coverage" NAME="form_detection_label Coverage Results" MODIFIED="1697903438300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/new/TP2" />
-    <SUITE FILE_PATH="coverage/visionArtificial$Deteccion.coverage" NAME="Deteccion Coverage Results" MODIFIED="1692121758156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camara.coverage" NAME="camara Coverage Results" MODIFIED="1692123658496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$hu_moments_generation.coverage" NAME="hu_moments_generation Coverage Results" MODIFIED="1698674236038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camarav5.coverage" NAME="camarav5 Coverage Results" MODIFIED="1697895902513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
-    <SUITE FILE_PATH="coverage/visionArtificial$training_model.coverage" NAME="training_model Coverage Results" MODIFIED="1696624587238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri/utils" />
-    <SUITE FILE_PATH="coverage/visionArtificial$proyect2_martu.coverage" NAME="proyect2_martu Coverage Results" MODIFIED="1698670702171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camarav2.coverage" NAME="camarav2 Coverage Results" MODIFIED="1692124673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$testContours2.coverage" NAME="testContours2 Coverage Results" MODIFIED="1692995543602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$watershedEmi.coverage" NAME="watershedEmi Coverage Results" MODIFIED="1693592302593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$main_proyect2.coverage" NAME="main_proyect2 Coverage Results" MODIFIED="1698672351192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
-    <SUITE FILE_PATH="coverage/visionArtificial$watershedding.coverage" NAME="watershedding Coverage Results" MODIFIED="1693343142959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$v1.coverage" NAME="v1 Coverage Results" MODIFIED="1694196930984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$watershedTest.coverage" NAME="watershedTest Coverage Results" MODIFIED="1693344206589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/testeoWatershed" />
-    <SUITE FILE_PATH="coverage/visionArtificial$tp1_main.coverage" NAME="tp1_main Coverage Results" MODIFIED="1692452568054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$camarav4.coverage" NAME="camarav4 Coverage Results" MODIFIED="1692994643724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$main.coverage" NAME="main Coverage Results" MODIFIED="1696624818668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri/utils" />
-    <SUITE FILE_PATH="coverage/visionArtificial$trainer.coverage" NAME="trainer Coverage Results" MODIFIED="1697895896520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
-    <SUITE FILE_PATH="coverage/visionArtificial$DescriptorGenerator.coverage" NAME="DescriptorGenerator Coverage Results" MODIFIED="1696113136820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/TP2" />
-    <SUITE FILE_PATH="coverage/visionArtificial$google.coverage" NAME="google Coverage Results" MODIFIED="1693594913118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camarav6.coverage" NAME="camarav6 Coverage Results" MODIFIED="1698675053760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/final" />
-    <SUITE FILE_PATH="coverage/visionArtificial$camarav3.coverage" NAME="camarav3 Coverage Results" MODIFIED="1692455332292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
-    <SUITE FILE_PATH="coverage/visionArtificial$gpt.coverage" NAME="gpt Coverage Results" MODIFIED="1694199420340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/VA$chatGPT.coverage" NAME="chatGPT Coverage Results" MODIFIED="1692455433614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
     <SUITE FILE_PATH="coverage/visionArtificial$googlev2.coverage" NAME="googlev2 Coverage Results" MODIFIED="1694195145670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$v1.coverage" NAME="v1 Coverage Results" MODIFIED="1694196930984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$form_detection_label.coverage" NAME="form_detection_label Coverage Results" MODIFIED="1697903438300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/new/TP2" />
+    <SUITE FILE_PATH="coverage/VA$training_model.coverage" NAME="training_model Coverage Results" MODIFIED="1697901197716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/TP2_new" />
+    <SUITE FILE_PATH="coverage/visionArtificial$tp1_main.coverage" NAME="tp1_main Coverage Results" MODIFIED="1692122008586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$testContours2.coverage" NAME="testContours2 Coverage Results" MODIFIED="1693000710121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camara.coverage" NAME="camara Coverage Results" MODIFIED="1692123658496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$chatGPT.coverage" NAME="chatGPT Coverage Results" MODIFIED="1692482137488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$watershedding.coverage" NAME="watershedding Coverage Results" MODIFIED="1693344034862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$hu_moments_generation.coverage" NAME="hu_moments_generation Coverage Results" MODIFIED="1698674236038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
+    <SUITE FILE_PATH="coverage/visionArtificial$watershedEmi.coverage" NAME="watershedEmi Coverage Results" MODIFIED="1693592302593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$gpt.coverage" NAME="gpt Coverage Results" MODIFIED="1694198667117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/VA$camarav5.coverage" NAME="camarav5 Coverage Results" MODIFIED="1697903989170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
+    <SUITE FILE_PATH="coverage/VA$camarav2.coverage" NAME="camarav2 Coverage Results" MODIFIED="1692220497211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav6.coverage" NAME="camarav6 Coverage Results" MODIFIED="1698675053760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/final" />
+    <SUITE FILE_PATH="coverage/visionArtificial$training_model.coverage" NAME="training_model Coverage Results" MODIFIED="1696624587238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri/utils" />
+    <SUITE FILE_PATH="coverage/VA$HandTrackingModule.coverage" NAME="HandTrackingModule Coverage Results" MODIFIED="1701639427711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/FINAL" />
+    <SUITE FILE_PATH="coverage/visionArtificial$proyect2_martu.coverage" NAME="proyect2_martu Coverage Results" MODIFIED="1698670702171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
+    <SUITE FILE_PATH="coverage/VA$hu_moments_generation.coverage" NAME="hu_moments_generation Coverage Results" MODIFIED="1698693165251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/final" />
+    <SUITE FILE_PATH="coverage/VA$pong.coverage" NAME="pong Coverage Results" MODIFIED="1699451425583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/FINAL" />
+    <SUITE FILE_PATH="coverage/VA$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1701639450706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/FINAL" />
+    <SUITE FILE_PATH="coverage/VA$trainer.coverage" NAME="trainer Coverage Results" MODIFIED="1698693174630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/final" />
+    <SUITE FILE_PATH="coverage/visionArtificial$DescriptorGenerator.coverage" NAME="DescriptorGenerator Coverage Results" MODIFIED="1696113136820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/TP2" />
+    <SUITE FILE_PATH="coverage/visionArtificial$trainer.coverage" NAME="trainer Coverage Results" MODIFIED="1696625403756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
+    <SUITE FILE_PATH="coverage/VA$camarav6.coverage" NAME="camarav6 Coverage Results" MODIFIED="1698693966142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/final" />
+    <SUITE FILE_PATH="coverage/VA$camarav3.coverage" NAME="camarav3 Coverage Results" MODIFIED="1692454947665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$tp2.coverage" NAME="tp2 Coverage Results" MODIFIED="1693343995331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$Deteccion.coverage" NAME="Deteccion Coverage Results" MODIFIED="1692121758156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav3.coverage" NAME="camarav3 Coverage Results" MODIFIED="1692125024344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/VA$form_detection_label.coverage" NAME="form_detection_label Coverage Results" MODIFIED="1697902257958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/new/TP2" />
+    <SUITE FILE_PATH="coverage/visionArtificial$tp2conImg.coverage" NAME="tp2conImg Coverage Results" MODIFIED="1696626835046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
+    <SUITE FILE_PATH="coverage/VA$Test.coverage" NAME="Test Coverage Results" MODIFIED="1697902251516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/new/TP2" />
+    <SUITE FILE_PATH="coverage/visionArtificial$main_proyect2.coverage" NAME="main_proyect2 Coverage Results" MODIFIED="1698672351192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/proyecto2-main" />
+    <SUITE FILE_PATH="coverage/VA$googlev2.coverage" NAME="googlev2 Coverage Results" MODIFIED="1694457610577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/VA$camarav4.coverage" NAME="camarav4 Coverage Results" MODIFIED="1694457595604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav2.coverage" NAME="camarav2 Coverage Results" MODIFIED="1692124673220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
+    <SUITE FILE_PATH="coverage/visionArtificial$main.coverage" NAME="main Coverage Results" MODIFIED="1692110363238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VA$FacialExpressionRecognition.coverage" NAME="FacialExpressionRecognition Coverage Results" MODIFIED="1699556112580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/FINAL/V2" />
+    <SUITE FILE_PATH="coverage/VA$main.coverage" NAME="main Coverage Results" MODIFIED="1698091288950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3/final" />
+    <SUITE FILE_PATH="coverage/visionArtificial$watershedding.coverage" NAME="watershedding Coverage Results" MODIFIED="1693343142959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/tp3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$watershedTest.coverage" NAME="watershedTest Coverage Results" MODIFIED="1693344206589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/Guido/testeoWatershed" />
+    <SUITE FILE_PATH="coverage/visionArtificial$google.coverage" NAME="google Coverage Results" MODIFIED="1693594913118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/VA$testing_model.coverage" NAME="testing_model Coverage Results" MODIFIED="1697901408029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TEST/TP2" />
+    <SUITE FILE_PATH="coverage/visionArtificial$camarav5.coverage" NAME="camarav5 Coverage Results" MODIFIED="1696870816014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP2/machineFabri" />
+    <SUITE FILE_PATH="coverage/VA$gpt.coverage" NAME="gpt Coverage Results" MODIFIED="1698089697795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP3" />
+    <SUITE FILE_PATH="coverage/visionArtificial$testContours2.coverage" NAME="testContours2 Coverage Results" MODIFIED="1692995543602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TPs/TP1" />
   </component>
 </project>

@@ -72,7 +72,6 @@ def train_model():
 #    tree.plot_tree(clasificador)
     dump(clasificador, 'filename.train_proy2')
 
-#train_model()
 
 
 def get_trained_model_alt():
